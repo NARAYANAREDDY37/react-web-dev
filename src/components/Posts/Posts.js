@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AddPost from '../AddPost/AddPost';
+import Dialog from '../Dialog/Dialog';
 import SinglePost from '../SinglePost/SinglePost';
 
 export class Posts extends Component {
@@ -19,6 +20,16 @@ export class Posts extends Component {
     });
   };
 
+  onChangeTitleHandler = (id, e) => {
+    const postIndex = this.state.posts.findIndex((post) => post.id === id);
+    const posts = [...this.state.posts];
+    posts[postIndex].title = e.target.value;
+
+    this.setState({
+      posts,
+    });
+  };
+
   getPosts() {
     if (!this.state.showPosts) return null;
 
@@ -34,6 +45,7 @@ export class Posts extends Component {
           key={post.id}
           title={post.title}
           description={post.description}
+          changeTitle={this.onChangeTitleHandler.bind(this, post.id)}
         />
       );
     }
@@ -103,7 +115,15 @@ export class Posts extends Component {
         {/* {posts} */}
         {this.getPosts()}
 
-        <AddPost />
+        <div className='flex'>
+          <div className='my-5 flex-1'>
+            <AddPost />
+          </div>
+
+          <div className='my-5 flex-1'>
+            <Dialog>This is props children data</Dialog>
+          </div>
+        </div>
       </div>
     );
   }
