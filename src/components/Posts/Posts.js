@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AddPost from '../AddPost/AddPost';
 import SinglePost from '../SinglePost/SinglePost';
 
 export class Posts extends Component {
@@ -101,6 +102,8 @@ export class Posts extends Component {
         <hr />
         {/* {posts} */}
         {this.getPosts()}
+
+        <AddPost />
       </div>
     );
   }
