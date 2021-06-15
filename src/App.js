@@ -4,7 +4,7 @@ import Posts from './components/Posts/Posts';
 import Sidebar from './components/Sidebar/Sidebar';
 import Navigation from './components/Navigation/Navigation';
 import ParentRefTextInput from './components/RefsTextInput/ParentRefTextInput';
-import CallbackRefTextInput from './components/CallbackRefTextInput/CallbackRefTextInput';
+import ParentCallbackRefTextInput from './components/CallbackRefTextInput/ParentCallbackRefTextInput';
 
 function App() {
   let userData = {
@@ -34,7 +34,7 @@ function App() {
             <Posts />
           </div>
           <div>
-            <CallbackRefTextInput />
+            <ParentCallbackRefTextInput />
           </div>
         </div>
       </div>

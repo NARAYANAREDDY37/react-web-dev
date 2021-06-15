@@ -3,17 +3,19 @@ import React, { Component } from 'react';
 export class CallbackRefTextInput extends Component {
   constructor(props) {
     super(props);
-    //creating callbackRefText
+
     this.textInput = null;
+
+    //creating callbackRef using method
     this.inputRef = (el) => {
       this.textInput = el;
     };
   }
 
   componentDidMount() {
-    console.log(this.inputRef);
-    this.textInput.focus();
-    this.textInput.value = 'Callback Ref';
+    // console.log(this.inputRef);
+    // this.textInput.focus();
+    // this.textInput.value = 'Callback Ref';
   }
 
   render() {
@@ -23,7 +25,7 @@ export class CallbackRefTextInput extends Component {
         <input
           type='text'
           className='border border-gray-500'
-          ref={this.inputRef}
+          ref={this.props.inputRef}
         />
       </div>
     );

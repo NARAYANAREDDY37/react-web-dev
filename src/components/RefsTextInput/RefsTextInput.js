@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 export class RefsTextInput extends Component {
   constructor(props) {
     super(props);
+    //creating ref for the input element
     this.inputRef = React.createRef();
   }
 
