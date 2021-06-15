@@ -1,24 +1,29 @@
-import React from 'react'
+import React from 'react';
 
 //import logo from './logo.svg';
 import './App.css';
-//import Posts from './components/Posts/Posts';
+/* import Posts from './components/Posts/Posts';
 import Sidebar from './components/Sidebar/Sidebar';
 import Navigation from './components/Navigation/Navigation';
 import ParentRefTextInput from './components/RefsTextInput/ParentRefTextInput';
 import ParentCallbackRefTextInput from './components/CallbackRefTextInput/ParentCallbackRefTextInput';
 import ParentForwardingRef from './components/ForwardingRef/ParentForwardingRef';
-import TableFragment from './components/TableFragment/TableFragment';
+import TableFragment from './components/TableFragment/TableFragment'; */
+// import MouseWithCat from './components/MouseTracker/MouseWithCat';
+import Cat from './components/MouseTracker/Cat';
 
 function App() {
-  let userData = {
+  /* let userData = {
     name: 'Narayana',
     greet: function () {
       return 'Hello ' + this.name;
     }
-  };
+  }; */
   return (
     <div className='container mx-auto'>
+      <Cat />
+    </div>
+    /* <div className='container mx-auto'>
       <div className='flex'>
         <div className='w-1/5'>
           <Sidebar>
@@ -45,7 +50,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */
   );
 }
 
