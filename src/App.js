@@ -1,10 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
-import Posts from './components/Posts/Posts';
+//import Posts from './components/Posts/Posts';
 import Sidebar from './components/Sidebar/Sidebar';
 import Navigation from './components/Navigation/Navigation';
 import ParentRefTextInput from './components/RefsTextInput/ParentRefTextInput';
 import ParentCallbackRefTextInput from './components/CallbackRefTextInput/ParentCallbackRefTextInput';
+import ParentForwardingRef from './components/ForwardingRef/ParentForwardingRef';
 
 function App() {
   let userData = {
@@ -31,10 +32,10 @@ function App() {
             <ParentRefTextInput />
           </div>
           <div>
-            <Posts />
+            <ParentCallbackRefTextInput />
           </div>
           <div>
-            <ParentCallbackRefTextInput />
+            <ParentForwardingRef />
           </div>
         </div>
       </div>
