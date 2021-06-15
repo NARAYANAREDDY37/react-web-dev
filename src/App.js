@@ -10,8 +10,8 @@ import ParentCallbackRefTextInput from './components/CallbackRefTextInput/Parent
 import ParentForwardingRef from './components/ForwardingRef/ParentForwardingRef';
 import TableFragment from './components/TableFragment/TableFragment'; */
 // import MouseWithCat from './components/MouseTracker/MouseWithCat';
-import Cat from './components/MouseTracker/Cat';
-
+// import Cat from './components/MouseTracker/Cat';
+import UserPropTypes from './components/UserPropTypes/UserPropTypes';
 function App() {
   /* let userData = {
     name: 'Narayana',
@@ -21,7 +21,7 @@ function App() {
   }; */
   return (
     <div className='container mx-auto'>
-      <Cat />
+      <UserPropTypes />
     </div>
     /* <div className='container mx-auto'>
       <div className='flex'>
