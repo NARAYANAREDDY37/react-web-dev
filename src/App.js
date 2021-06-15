@@ -1,3 +1,5 @@
+import React from 'react'
+
 //import logo from './logo.svg';
 import './App.css';
 //import Posts from './components/Posts/Posts';
@@ -6,6 +8,7 @@ import Navigation from './components/Navigation/Navigation';
 import ParentRefTextInput from './components/RefsTextInput/ParentRefTextInput';
 import ParentCallbackRefTextInput from './components/CallbackRefTextInput/ParentCallbackRefTextInput';
 import ParentForwardingRef from './components/ForwardingRef/ParentForwardingRef';
+import TableFragment from './components/TableFragment/TableFragment';
 
 function App() {
   let userData = {
@@ -36,6 +39,9 @@ function App() {
           </div>
           <div>
             <ParentForwardingRef />
+          </div>
+          <div>
+            <TableFragment />
           </div>
         </div>
       </div>
